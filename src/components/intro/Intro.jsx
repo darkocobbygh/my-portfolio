@@ -1,5 +1,9 @@
 import './Intro.css'
-import Me from '../../images/pexels-olia-danilevich-4974912.jpg'
+import Me from '../../images/1_UMBVvBykFuYM5T4XfiCrHA.png';
+import Fb from '../../images/icons8-facebook (1).svg';
+import Ig from '../../images/icons8-instagram (1).svg';
+import Twit from '../../images/icons8-twitter (1).svg';
+import GitHu from '../../images/icons8-github.svg';
 
 
 const Intro=()=>{
@@ -22,14 +26,17 @@ const Intro=()=>{
                     </p>
                     <div className="colz">
                         <div className="colz-icon">
-                        <a href="#">
-                            <i className="fa fa-facebook-square">Facebook icon</i>
+                        <a href="https://web.facebook.com/makaveli.big">
+                            <img src={Fb} alt="" />
                         </a>
-                        <a href="#">
-                            <i className="fa fa-instagram">Instagram icon</i>
+                        <a href="https://www.instagram.com/nii_darko_cobblah/">
+                        <img src={Ig} alt="" />
                         </a>
-                        <a href="#">
-                            <i className="fa fa-twitter-square">Twitter Icon</i>
+                        <a href="https://twitter.com/darkocobblah">
+                        <img src={Twit} alt="" />
+                        </a>
+                        <a href="https://github.com/darkocobbygh">
+                        <img src={GitHu} alt="" />
                         </a>
                         </div>
                     </div>
