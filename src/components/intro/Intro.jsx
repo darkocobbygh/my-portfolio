@@ -20,10 +20,12 @@ const Intro=()=>{
                             <div className='i-title-item'>RESTful API Operations</div>
                         </div>
                     </div>
+                    <div>
                     <p className='i-desc'>
                         I design and develop websites and web apps for customers of all sizes,
                          specializing in creating stylish, modern websites, web services and online stores
                     </p>
+                    </div>
                     <div className="colz">
                         <div className="colz-icon">
                         <a href="https://web.facebook.com/makaveli.big">
@@ -41,24 +43,7 @@ const Intro=()=>{
                         </div>
                     </div>
                 </div>
-                <svg
-                width='75'
-                height='75'
-                viewBox='0 0 75 75'
-                fill='none'
-                stroke='black'
-                className='i-scroll' 
-                xmlns='http://www.w3.org/2000/svg'>
-                    <g id='scroll' >
-                        <path id='Vector'
-                        d='M40.5 15L34.5 9L28.5 15'
-                        stroke-width='3'
-                        stroke-miterlimit='10'
-                        stroke-lineup='round'
-                        stroke-linejoin='round'
-                        />
-                    </g>
-                </svg>
+               
             </div>
             <div className="i-right">
                 <div className='i-bg'></div>

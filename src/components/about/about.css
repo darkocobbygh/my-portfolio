@@ -25,7 +25,10 @@
     position: relative;
     overflow: hidden;
 }
-
+.dw-sv{
+    color: #fff;
+    background-color: #fff;
+}
 .right{
     flex:1
 }
@@ -39,5 +42,16 @@
 @media screen and(max-width: 480px) {
     .a{
         flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .a-left{
+        width: 100%;
+    }
+    .a-card{
+        height: 30vh;
+    }
+    .a-card.bg{
+        display: none;
     }
 }
