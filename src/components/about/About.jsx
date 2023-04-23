@@ -14,8 +14,8 @@ const About=()=>{
         </div>
         <div className='right'>
             <h1 className='a-title'>About Me</h1>
-            <p className='a-sub'>This is where i write about myself and get into detail</p>
-            <p className='a-desc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, labore quisquam nostrum dignissimos, nobis sapiente, incidunt deserunt voluptates rem non sed impedit officiis animi eius similique? Iusto blanditiis tenetur perferendis.</p>
+            <p className='a-sub'></p>
+            <p className='a-desc'>I’m a nice fun and friendly person, I’m honest and punctual, I work well in a team but also on my own as I like to set myself goals which I will achieve, I have good listening and communication skills. I have a creative mind and am always up for new challenges. I am well organized and always plan ahead to make sure I manage my time well.</p>
                 <h1>My Resume/Curriculum Vitae</h1>
                 <p>Click below to download my Resume/ Curriculum Vitae</p>
                         <a href={CV} download={CV}>

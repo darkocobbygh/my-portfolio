@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
@@ -8,7 +8,6 @@ import { ThemeContext } from "./context";
 
 
 function App() {
-  const [dark,setDark]=useState(false);
 
   const theme= useContext(ThemeContext);
   const darkMode=theme.state.darkMode;
