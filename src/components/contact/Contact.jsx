@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import '../contact/contact.css'
 import emailjs from '@emailjs/browser';
 
@@ -10,6 +10,7 @@ import { ThemeContext } from '../../context';
 const Contact=()=>{
     const theme= useContext(ThemeContext);
     const darkMode=theme.state.darkMode;
+    const [done,setDone]= useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -17,6 +18,8 @@ const Contact=()=>{
         emailjs.sendForm('contact_service', 'contact_form',e.target, 'l6WaYpC8Sl_vhE8tU')
           .then((result) => {
               console.log('Success'+ result.text);
+              setDone(true) 
+          window.location.reload(false);
           }, (error) => {
               console.log(error.text);
           });
@@ -50,11 +53,12 @@ const Contact=()=>{
                         <b>What's your story?</b> Get in touch. Always freelancing if the right project comes along
                     </p>
                       <form action="" onSubmit={sendEmail}>
-                        <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Name' name='user_name' />
-                        <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Subject' name='user_subject' />
-                        <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Email' name='user_email' />
-                        <textarea style={{backgroundColor: darkMode && '#333'}} name="message" id="" cols="30" rows="5" placeholder='message'  ></textarea>
+                        <input style={{backgroundColor: darkMode && ''}} type="text" placeholder='Name' name='user_name' />
+                        <input style={{backgroundColor: darkMode && ''}} type="text" placeholder='Subject' name='user_subject' />
+                        <input style={{backgroundColor: darkMode && ''}} type="text" placeholder='Email' name='user_email' />
+                        <textarea style={{backgroundColor: darkMode && ''}} name="message" id="" cols="30" rows="5" placeholder='message'  ></textarea>
                         <button type='submit' value='Send' >Submit</button>
+                        {done && 'Thank you'}
                     </form>
                 </div>
             </div>
