@@ -17,6 +17,8 @@ const Intro=()=>{
                         <div className='i-title-wrapper'>
                             <div className='i-title-item'>Backend Developer</div>
                             <div className='i-title-item'>Frontend Developer</div>
+                            <div className='i-title-item'>Fullstack Developer</div>
+                            <div className='i-title-item'>Javascript Developer</div>
                             <div className='i-title-item'>RESTful API Operations</div>
                         </div>
                     </div>
