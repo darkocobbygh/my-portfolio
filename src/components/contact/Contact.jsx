@@ -2,9 +2,9 @@ import { useContext, useState } from 'react';
 import '../contact/contact.css'
 import emailjs from '@emailjs/browser';
 
-import Email from '../../images/email.svg';
-import Phone from '../../images/phone.svg';
-import Location from '../../images/location_on.svg'
+import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa";
+import { TiLocation } from "react-icons/ti";
 import { ThemeContext } from '../../context';
 
 const Contact=()=>{
@@ -35,15 +35,15 @@ const Contact=()=>{
                     </h1>
                     <div className='c-info'>
                         <div data-testid='Phone' className='c-info-item'>
-                            <img src={Phone} className='c-icon' alt="icon for phone" />
+                        <FaPhone size={30} />
                             <p>+233201076334</p>
                         </div>
                         <div data-testid='Email' className='c-info-item'>
-                            <img src={Email} className='c-icon' alt="icon for email" />
+                        <MdEmail size={30} />
                             <p>darkogaucho@gmail.com</p>
                         </div>
                         <div data-testid='Home' className='c-info-item'>
-                            <img src={Location} className='c-icon' alt="icon for home address" />
+                        <TiLocation size={30} />
                             <p>Dansoman Accra, Ghana</p>
                         </div>
                     </div>

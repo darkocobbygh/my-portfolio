@@ -1,12 +1,17 @@
-import './Intro.css'
+import './Intro.css';
+import { useContext } from "react";
 import Me from '../../images/1_UMBVvBykFuYM5T4XfiCrHA.png';
-import Fb from '../../images/icons8-facebook (1).svg';
-import Ig from '../../images/icons8-instagram (1).svg';
-import Twit from '../../images/icons8-twitter (1).svg';
-import GitHu from '../../images/icons8-github.svg';
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import { ThemeContext } from '../../context';
 
 
 const Intro=()=>{
+    const theme= useContext(ThemeContext);
+  const darkMode=theme.state.darkMode;
     return(
         <div className="i">
             <div className="i-left">
@@ -15,11 +20,7 @@ const Intro=()=>{
                     <h1 className='i-name'>Emmanuel Cobblah</h1>
                     <div className='i-title'>
                         <div className='i-title-wrapper'>
-                            <div className='i-title-item'>Backend Developer</div>
-                            <div className='i-title-item'>Frontend Developer</div>
-                            <div className='i-title-item'>Fullstack Developer</div>
-                            <div className='i-title-item'>Javascript Developer</div>
-                            <div className='i-title-item'>RESTful API Operations</div>
+                            <div className='i-title-item'>Frontend Developer</div> 
                         </div>
                     </div>
                     <div>
@@ -30,18 +31,18 @@ const Intro=()=>{
                     </div>
                     <div className="colz">
                         <div className="colz-icon">
-                        <a href="https://web.facebook.com/makaveli.big">
-                            <img src={Fb} alt="" />
-                        </a>
-                        <a href="https://www.instagram.com/nii_darko_cobblah/">
-                        <img src={Ig} alt="" />
-                        </a>
-                        <a href="https://twitter.com/darkocobblah">
-                        <img src={Twit} alt="" />
-                        </a>
-                        <a href="https://github.com/darkocobbygh">
-                        <img src={GitHu} alt="" />
-                        </a>
+                            <Link to={'https://web.facebook.com/makaveli.big'}>
+                            <FaFacebook style={{color: darkMode && '#fff'}} color='blue' size={60} />
+                            </Link>
+                            <Link to={'https://www.instagram.com/nii_darko_cobblah/'}>
+                            <FaInstagram style={{color: darkMode && '#fff'}} color='red' size={60} />
+                            </Link>
+                            <Link to={'https://twitter.com/darkocobblah'}>
+                            <FaTwitter style={{color: darkMode && '#fff'}} color='black' size={60} />
+                            </Link>
+                            <Link to={'https://github.com/darkocobbygh'}>
+                            <FaGithub style={{color: darkMode && '#fff'}} color='black' size={60} />
+                            </Link>
                         </div>
                     </div>
                 </div>

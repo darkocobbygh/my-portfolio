@@ -1,7 +1,7 @@
 import './about.css'
 import IM from '../../images/pexels-kevin-ku-577585.jpg'
-import CV from '../../cv/CURRICULUM VITAE.docx'
-import Dw from '../../images/download(1).svg'
+import CV from '../../cv/Emmanuel Darko Cobblah frontend developer.docx';
+import { MdDownload } from "react-icons/md";
 
 const About=()=>{
     return(
@@ -21,7 +21,7 @@ const About=()=>{
                 <p>Click below to download my Resume/ Curriculum Vitae</p>
                         <a href={CV} download={CV}>
                             <button className="btn-highlighted-btn">
-                                <img src={Dw} alt=""className='dw-sv' /><br /> Download CV here
+                            <MdDownload />
                             </button>
                         </a>
                 </div>

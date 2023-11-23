@@ -9,6 +9,10 @@
     align-items: center;
     justify-content: center;
 }
+.colz-icon{
+  display: flex;
+  gap: 10px;
+}
 
 .i-right{
     flex: 1;
@@ -16,7 +20,7 @@
 }
 
 .i-left-wrapper{
-    padding: 50px;
+    padding: 20px;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -45,7 +49,6 @@
 
 .i-title-wrapper{
     height: 100%;
-    animation: move 10s ease-in-out infinite alternate;
 }
 
 @keyframes move {
